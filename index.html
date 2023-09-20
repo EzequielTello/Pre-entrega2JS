@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CultoMotos</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>¡Hola! Bienvenidos a CultoMotos</h1>
+      <h2>¿Qué moto querés comprar?</h2>
+      <ul>
+        <li onclick="comprar(honda)">Honda <span>200Y</span></li>
+        <li onclick="comprar(suzuki)">Suzuki <span>150Y</span></li>
+        <li onclick="comprar(yamaha)">Yamaha <span>300Y</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Mis Compras</h2>
+      <ul id="miscompras">
+        <!-- Acá vamos a cargar los items que estén en el array
+           mis compras dinámicamente con el DOM -->
+      </ul>
+      <h2 id="yenes">
+        Yenes: <span><!-- Acá va el dinero disponible --></span>
+      </h2>
+    </section>
+    <script src="moto.js"></script>
+  </body>
+</html>
